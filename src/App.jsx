@@ -1,13 +1,14 @@
-import { useState } from 'react';
+import { Outlet } from 'react-router-dom';
 import './App.css';
+import Home from './home/Home';
+import NavItems from './components/NavItems';
 
 function App() {
-    const [count, setCount] = useState(0);
-
     return (
         <>
             <div>
-                <h1 className='text-primary'>Hello Developer</h1>
+                <NavItems />
+                <Outlet />
             </div>
         </>
     );
