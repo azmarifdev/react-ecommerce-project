@@ -7,11 +7,11 @@ function App() {
     return (
         <>
             <div>
-                <NavItems />
+                <NavItems /> 
                 <Outlet />
             </div>
         </>
     );
 }
 
-export default App;
+export default App; 
