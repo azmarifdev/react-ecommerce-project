@@ -5,7 +5,7 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 // Import Swiper styles
 import 'swiper/css';
 // import required modules
-import { Autoplay} from 'swiper/modules';
+import { Autoplay } from 'swiper/modules'; 
 
 const sponsorList = [ 
     {
@@ -22,12 +22,12 @@ const sponsorList = [
     },
     {
         imgUrl: '/src/assets/images/sponsor/05.png',
-    },
+    }, 
     {
         imgUrl: '/src/assets/images/sponsor/06.png',
     },
 ];
-
+ 
 const Sponsor = () => {
     return (
         <>
