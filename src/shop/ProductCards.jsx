@@ -4,9 +4,9 @@ import { Link } from 'react-router-dom';
 // import Rating from "../../components/Sidebar/rating";
 import Rating from '../components/Rating';
 
-const ProductCards = ({ gridList, products }) => {
-    console.log(gridList);
-    console.log(products);
+const ProductCards = ({ gridList, products }) =>
+{
+    
     return (
         <div className={`shop-product-wrap row justify-content-center ${gridList ? 'grid' : 'list'}`}>
             {products.map((product, i) => (
