@@ -12,7 +12,7 @@ const Shop = () => {
 
     const [currentPage, setCurrentPage] = useState(1);
     const productPerPage = 12;
-    const indexOfLastProduct = currentPage * productPerPage;
+    const indexOfLastProduct = productPerPage * currentPage;
     const indexOfFirstProduct = indexOfLastProduct - productPerPage;
     const currentProducts = products.slice(indexOfFirstProduct, indexOfLastProduct);
 
@@ -43,7 +43,7 @@ const Shop = () => {
                                 </div>
                                 {/* products cards */}
                                 <div>
-                                    <ProductCards gridList={GridList} products={products} />
+                                    <ProductCards gridList={GridList} products={currentProducts} />
                                 </div>
                                 <Pagination
                                     productPerPage={productPerPage}
@@ -53,7 +53,11 @@ const Shop = () => {
                                 />
                             </article>
                         </div>
-                        <div className="col-lg-4 col-12">right side</div>
+                        <div className="col-lg-4 col-12">
+                            <aside>
+                                
+                            </aside>
+                        </div>
                     </div>
                 </div>
             </div>
