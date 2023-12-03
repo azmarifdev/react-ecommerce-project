@@ -8,7 +8,7 @@ import AboutUs from './AboutUs';
 import AppSection from './AppSection';
 import Sponsor from './Sponsor';
 
-const Home = () => {
+const Home = () => {  
     return (
         <div>
             <Banner />

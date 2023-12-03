@@ -12,7 +12,7 @@ const SingleProduct = () => {
     useEffect(() => {
         fetch('../products.json')
             .then((res) => res.json())
-            .then((data) => setProduct(data)); 
+            .then((data) => setProduct(data));
     }, []);
     console.log(product);
 
