@@ -26,7 +26,7 @@ const Shop = () => {
 
     const [selectedCategory, setSelectedCategory] = useState('All');
     const menuItems = [...new Set(Data.map((Val) => Val.category))];
-    console.log(menuItems);
+    // console.log(menuItems);
 
     const filterItem = (proCat) => {
         const newItem = Data.filter((newVal) => newVal.category === proCat);

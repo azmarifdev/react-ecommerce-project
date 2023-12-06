@@ -47,10 +47,10 @@ var arraySlice = Array.prototype.slice;
 
 // helper function for logging errors
 // $.error breaks jQuery chaining
-var console = window.console;
-var logError = typeof console == 'undefined' ? function() {} :
+var // console = window.// console;
+var logError = typeof // console == 'undefined' ? function() {} :
   function( message ) {
-    console.error( message );
+    // console.error( message );
   };
 
 // ----- jQueryBridget ----- //
@@ -272,7 +272,7 @@ return EvEmitter;
  */
 
 /* jshint browser: true, strict: true, undef: true, unused: true */
-/* globals console: false */
+/* globals // console: false */
 
 ( function( window, factory ) {
   /* jshint strict: false */ /* globals define, module */
@@ -302,9 +302,9 @@ function getStyleSize( value ) {
 
 function noop() {}
 
-var logError = typeof console == 'undefined' ? noop :
+var logError = typeof // console == 'undefined' ? noop :
   function( message ) {
-    console.error( message );
+    // console.error( message );
   };
 
 // -------------------------- measurements -------------------------- //
@@ -721,7 +721,7 @@ utils.toDashed = function( str ) {
   }).toLowerCase();
 };
 
-var console = window.console;
+var // console = window.// console;
 /**
  * allow user to initialize classes via [data-namespace] or .js-namespace class
  * htmlInit( Widget, 'widgetName' )
@@ -746,8 +746,8 @@ utils.htmlInit = function( WidgetClass, namespace ) {
         options = attr && JSON.parse( attr );
       } catch ( error ) {
         // log error, do not initialize
-        if ( console ) {
-          console.error( 'Error parsing ' + dataAttr + ' on ' + elem.className +
+        if ( // console ) {
+          // console.error( 'Error parsing ' + dataAttr + ' on ' + elem.className +
           ': ' + error );
         }
         return;
@@ -1371,7 +1371,7 @@ return Item;
 
 // ----- vars ----- //
 
-var console = window.console;
+var // console = window.// console;
 var jQuery = window.jQuery;
 var noop = function() {};
 
@@ -1391,8 +1391,8 @@ var instances = {};
 function Outlayer( element, options ) {
   var queryElement = utils.getQueryElement( element );
   if ( !queryElement ) {
-    if ( console ) {
-      console.error( 'Bad element for ' + this.constructor.namespace +
+    if ( // console ) {
+      // console.error( 'Bad element for ' + this.constructor.namespace +
         ': ' + ( queryElement || element ) );
     }
     return;
@@ -3393,7 +3393,7 @@ var trim = String.prototype.trim ?
     var layoutMode = this.options.layoutMode;
     var mode = this.modes[ layoutMode ];
     if ( !mode ) {
-      // TODO console.error
+      // TODO // console.error
       throw new Error( 'No layout mode: ' + layoutMode );
     }
     // HACK sync mode's options

@@ -36,7 +36,7 @@ function Banner() {
         setFilterProducts(filtered);
     };
 
-    console.log(filterProducts);
+    // console.log(filterProducts);
 
     return (
         <div className="banner-section style-4">
